@@ -23,6 +23,7 @@ const Footer = () => {
             <img src={copywright} className="" alt="" /> 2022 Metabnb
           </p>
         </div>
+        <div className="footer__lists-container">
         <ul className="footer__lists">
           <li className="footer__title">Community</li>
           <li className="footer__item">NFTs</li>
@@ -44,6 +45,7 @@ const Footer = () => {
           <li className="footer__item">Career</li>
           <li className="footer__item">Contact us</li>
         </ul>
+        </div>
       </div>
     </section>
   );

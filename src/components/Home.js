@@ -3,9 +3,9 @@ import Wallet from '../components/wallet'
 import Adventure from '../components/adventure'
 import Nft from '../components/NFT';
 
-function App() {
+function Home() {
   return (
-    <div className="app">
+    <div className="home">
       <Search/>
       <Wallet/>
       <Adventure/>
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

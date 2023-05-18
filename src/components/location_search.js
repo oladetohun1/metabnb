@@ -1,14 +1,9 @@
-import image1 from "../Assets/images/image_3rent1.png";
-import image2 from "../Assets/images/image_4rent1.png";
-import image3 from "../Assets/images/image_5rent1.png";
-import image4 from "../Assets/images/image_6rent1.png";
+import image2 from "../Assets/images/Group 4028static.png";
 
-const doSomething = (e) => {
-  e.preventDefault();
-  console.log("Searching for location");
-};
+
 function Search() {
   return (
+    <div className="container">
     <section className="header-search">
       <div className="header-search__text">
         <p>
@@ -21,7 +16,7 @@ function Search() {
           comfort zone
         </p>
         
-        <form onSubmit={doSomething}>
+        <form >
           <input
             type="text"
             placeholder="Search for location"
@@ -34,20 +29,12 @@ function Search() {
       </div>
       <div className="header-search__card">
         <div className="header-search__card--one">
-        <img src={image2} alt="" className="header-search__card-card-2" />
-
-          <img src={image4} alt="" className="header-search__card-card-4" />
-          
-   
+        <img src={image2} alt="" className="header-search__card-card" />
         </div>
-        <div className="header-search__card--two">
-        <img src={image1} alt="" className="header-search__card-card-1" />
-              <img src={image3} alt="" className="header-search__card-card-3" />
-
-
-        </div>
+       
       </div>
     </section>
+    </div>
   );
 }
 

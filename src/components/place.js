@@ -14,6 +14,7 @@ import card5 from "../Assets/images/card-05.png";
 import card6 from "../Assets/images/card-06.png";
 import card7 from "../Assets/images/card-07.png";
 import card8 from "../Assets/images/card-08.png";
+
 function Place() {
   return (
     <section className="place">
@@ -27,7 +28,7 @@ function Place() {
           <li className="header__nav-item place-item">Cabins</li>
           <li className="header__nav-item place-item">Off-grid</li>
           <li className="header__nav-item place-item">Farm</li>
-          <li className="header__nav-item place-item">Location</li>
+          <li className="header__nav-item place-item loc">Location</li>
         </ul>
       </div>
       <div className="adventures__cards">
