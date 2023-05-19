@@ -15,7 +15,7 @@
   --gradient1: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
   --gradient2: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 }
-.header__logo{
+.header__logo {
   transform: scale(0.6);
   margin-left: -0.6rem;
   z-index: -1000;
@@ -28,7 +28,7 @@
   display: flex;
   z-index: 1000;
 }
-.sidemenu{
+.sidemenu {
   position: fixed;
   top: 0;
   right: 0;
@@ -36,19 +36,19 @@
   z-index: -1;
 }
 
-.sidemenu__nav{
+.sidemenu__nav {
   width: 50vw;
   background-color: #a02278f3;
   padding: 1rem;
   height: 100vh;
 }
-.sidemenu__nav-item{
+.sidemenu__nav-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-.sidemenu__nav-link{
+.sidemenu__nav-link {
   text-decoration: none;
   color: #ffffff;
   font-weight: 400;
@@ -59,8 +59,6 @@
 .header__nav {
   display: none;
 }
-
-
 
 .sidemenu__nav-link:hover {
   color: #a02279;
@@ -75,30 +73,29 @@
   width: auto;
 }
 
-.container{
+.container {
   padding: 1rem;
 }
-.header-search{
+.header-search {
   display: flex;
   flex-direction: column;
   margin-top: 3.2rem;
 }
 
-.header-search__text{
+.header-search__text {
   display: flex;
   flex-direction: column;
 }
 
-div > p:first-child{
+div > p:first-child {
   font-size: 56px;
   font-weight: 400;
   color: #434343;
-
 }
-div > p:first-child > span{
+div > p:first-child > span {
   color: #a02279;
 }
-div > p:nth-of-type(2){
+div > p:nth-of-type(2) {
   font-size: 24px;
   font-weight: 400;
   color: #434343;
@@ -152,14 +149,14 @@ form > button {
   display: flex;
 }
 
-@media only screen and (max-width: 601px){
-  .wallet{
+@media only screen and (max-width: 601px) {
+  .wallet {
     font-size: 60%;
   }
-  .wallet__some{
+  .wallet__some {
     transform: scale(0.7);
   }
-  .wallet__link{
+  .wallet__link {
     margin-top: 0.4rem;
   }
 }
@@ -176,48 +173,48 @@ form > button {
   font-weight: 400;
 }
 
-.adventures__title{
+.adventures__title {
   text-align: center;
   margin: 1.2rem 0 1.2rem 0;
 }
 
-.adventures__title h1{
+.adventures__title h1 {
   font-size: 0.8rem;
   font-weight: 400;
   color: #434343;
 }
 
-.adventures__cards{
+.adventures__cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.adventures__cards-img{
+.adventures__cards-img {
   margin-bottom: 1.2rem;
 }
 
-.nft{
+.nft {
   background-color: #a02279;
 }
 
-.nft__container{
+.nft__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.nft__text h1{
+.nft__text h1 {
   margin-bottom: 1rem;
 }
-.nft__text{
+.nft__text {
   color: #ffffff;
   padding: 1rem;
   font-size: 1rem;
   font-weight: 400;
   margin: 1.2rem 0 1.2rem 0;
 }
-.nft__text > p{
+.nft__text > p {
   margin-bottom: 1rem;
   line-height: 1.5rem;
   font-size: 0.8rem;
@@ -240,7 +237,6 @@ form > button {
 .nft__cards-img {
   transform: scale(0.55);
   margin: -5rem 0rem -3.5rem -5.7em;
-
 }
 .nft__cards-img:hover {
   transform: scale(0.5);
@@ -252,7 +248,7 @@ form > button {
 .footer-container {
   display: flex;
   flex-direction: column;
-
+  justify-content: flex-start;
   color: #ffffff;
 }
 
@@ -260,13 +256,18 @@ form > button {
   transform: scale(0.8);
   margin-top: 1rem;
 }
+@media only screen and (min-width: 768px) {
+  .footer__icon {
+    margin-left: -1rem;
+  }
+}
 
 .footer__socials {
   padding: 1rem 0.5rem 0.5rem 0rem;
 }
 .footer__lists-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
@@ -289,11 +290,13 @@ form > button {
   flex-wrap: wrap;
   color: #434343;
   padding: 1rem;
-
 }
-.place__title{
+.place__title {
   margin-top: 1.6rem;
+  justify-content: center;
+  display: flex;
 }
+
 .place-item {
   display: flex;
   margin: 0.2rem;
@@ -301,8 +304,114 @@ form > button {
   height: 1.6rem;
   line-height: 1.6rem;
 }
-.loc{
-  border: 1px solid #B4B4B4;
+@media only screen and (min-width: 1000px) {
+  .place-item {
+    font-size: 85%;
+  }
+  .footer__icon {
+    margin-left: -2rem;
+  }
+  .sidemenu {
+    display: none;
+  }
+  .header__nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    z-index: 10000;
+    margin-left: 7rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .header__nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 0.8rem;
+  }
+  .header__nav-link {
+    text-decoration: none;
+    height: 2.5rem;
+    display: flex;
+    line-height: 2.5rem;
+    margin-right: 0.8rem;
+    color: #434343;
+  }
+
+  .header__btn-link {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 20px;
+    font-size: 80%;
+    padding: 5px 16px 5px 16px;
+    background: var(--gradient2);
+    border-radius: 8px;
+    margin-right: 6.4rem;
+  }
+  .nft__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 1.5rem;
+  padding: 1.5rem;
+}
+.nft__cards-img {
+  transform: scale(0.55);
+  margin: -3rem 0rem -3.5rem -5.7em;
+}
+.nft__text{
+  width: 50%;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer__icon{
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .place-item {
+    font-size: 100%;
+  }
+  .header__nav-link{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .header__nav-list {
+    margin-left: -6rem;
+    margin-right: 4rem;
+  }
+  .header__btn-link {
+    margin-right: 0rem;
+  }
+
+  .nft__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 1.5rem;
+}
+.header-search {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3.2rem;
+}
+.header-search__text {
+  display: flex;
+  width: 50%;
+  margin-right: 3.2rem;
+  margin-left: 1rem;
+}
+
+}
+.loc {
+  border: 1px solid #b4b4b4;
   padding: 0.2rem;
   border-radius: 8px;
   align-items: center;
