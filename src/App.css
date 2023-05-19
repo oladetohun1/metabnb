@@ -376,6 +376,10 @@ form > button {
 }
 
 @media only screen and (min-width: 1200px) {
+  .header__nav {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
   .place-item {
     font-size: 100%;
   }
@@ -408,6 +412,55 @@ form > button {
   margin-right: 3.2rem;
   margin-left: 1rem;
 }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  .header__logo{
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+.container {
+  padding: 1rem 10rem 1rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+  .place-item {
+    font-size: 100%;
+  }
+  .header__nav-link{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+  .header__nav-list {
+    margin-left: -6rem;
+    margin-right: 4rem;
+  }
+  .header__btn-link {
+    margin-right: 0rem;
+  }
+
+  .nft__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 1.5rem;
+}
+.adventures__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: center;
+  margin: 0 200px;
+}
+.adventures__cards > img {
+  display: flex;
+  margin: 0 10px 40px 10px;
+}
+  
 
 }
 .loc {
